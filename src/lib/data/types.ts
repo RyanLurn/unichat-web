@@ -14,4 +14,9 @@ type ChatType = {
   lastOpenedAt: string
 }
 
-export type { MessageType, ChatType }
+type FakeDbType = {
+  chats: Array<ChatType>
+  messages: Array<MessageType>
+}
+
+export type { MessageType, ChatType, FakeDbType }
